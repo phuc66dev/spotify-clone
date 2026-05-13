@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/images/logo.jpg";
 import { useContext, useState } from "react";
-import { register } from "../apis/AuthService";
+import { register } from "../apis/authService";
 import { ToastContext } from "../contexts/ToastContext";
 import MyModal from "../components/ui/MyModal/MyModal";
 import ScaleLoader from "react-spinners/ScaleLoader";
