@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+/* Cài đặt font mặc định */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #121212; /* Màu nền tối của Spotify */
+  color: #ffffff; /* Màu chữ trắng */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar ẩn hoặc tùy chỉnh */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a7a6a6;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Mặc định ẩn scrollbar */
+.scrollbar-invisible::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Khi hover → hiển thị scrollbar */
+.scrollbar-visible::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Ẩn các nút mũi tên (scrollbar buttons) */
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+}
