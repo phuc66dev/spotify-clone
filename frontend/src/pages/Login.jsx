@@ -1,8 +1,7 @@
-import Button from "../components/ui/Button/Button";
 import logo from "../assets/images/logo.jpg";
 import { Link } from "react-router-dom";
 import { useContext, useRef, useState } from "react";
-import { login } from "../apis/AuthService";
+import { login } from "../apis/authService";
 import { ToastContext } from "../contexts/ToastContext";
 import MyModal from "../components/ui/MyModal/MyModal";
 import ScaleLoader from "react-spinners/ScaleLoader";
